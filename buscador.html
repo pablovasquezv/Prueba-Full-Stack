@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Buscador de Automoviles</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Agregamos el libreria d -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--Agregamos el JQuery-->
+    <!--Libreria de iconos de internet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--css-->
+    <!--Agregamos todas el zoom a las imagenes-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<!--Agregamos estilo al cuerpo de la pagina-->
+
+<body id="bodyGaleria">
+    <!--Agregamos el menu de navegacion a la pagina web-->
+    <!--  fixed-top Para que el menu quede fijo y solo se mueva el contenido-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top ">
+        <a class="navbar-brand" href="index.html"><button class="btn" data-toggle="tooltip" data-placemet="top"
+                title="Inicio"><i class="fa fa-home"> Principal</i></button></a>
+        <a class="navbar-brand" href="buscador.html"><button class="btn" data-toggle="tooltip" data-placemet="top"
+                title="Inicio"><i class="fa fa-search"> Nueva Busqueda</i></button></a>
+        
+    </nav>
+    <!--Creamos el-->
+    <div class="table-responsive">
+        <div class="container mt-3 ">
+            <br></br>
+            <br>
+            <h2 align="center">Buscador Automoviles Sedan y Coupé</h2>
+            <!--Agregamo la clase lead para que se agrande las letras-->
+            <p class="lead">
+                Busque escriba el nombre del deportivo en la tabla...
+            </p>
+            <!--Creamos un boton con un id para llamarlo-->
+            <input class="form-control" id="myInput" type="text" placeholder="Buscar..." autofocus>
+            <br>
+            <!--Creasmo la tabla con border y reponsible-->
+            <table class="table  table-bordered table-responsive" id="colorTabla">
+                <!--Creamos las colum-->
+                <thead style="text-align: center; height: 24px; width: 341px;">
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Caracteristícas</th>
+                        <th>Motor</th>
+                    </tr>
+                    <!--Creamos las filas-->
+                <tbody id="miTabla" style="text-align: center; height: 24px; width: 341px;">
+
+                    <th style="text-align: center; height: 24px; width: 341px;" scope="row">Audi R8 V10 Plus</th>
+                    <td style="text-align: center; height: 24px; width: 341px;">Este coupé de culata baja tiene pliegues
+                        afilados,
+                        acentos de fibra de carbono y diseño de motor </td>
+                    <td>Motor V10 de 5.2 litros ofrece 610 caballos de fuerza. </td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: center; height: 24px; width: 341px;" scope="row">Ford Mustang Shelby
+                            GT350</th>
+                        <td style="text-align: center; height: 24px; width: 341px;">
+                            Transmisión manual Tremec de 6 velocidades,diferencial de deslizamiento limitado
+                            Torsen, amortiguadores magnéticos Ford MagneRide,rotores de freno delantero de 15.5
+                            pulgadas con pinzas Brembo de 6 pistones, discos traseros de 14.9 pulgadas con pinzas
+                            de 4 pistones y una altura de conducción reducida.</td>
+                        <td>Motor V8 de 5.2 litros ofrece 526 caballos de fuerza.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Aston Martin DB11</th>
+                        <td>La carrocería es preciosa, y para nada compromete su rendimiento.
+                            La fuerza aerodinámica es importante para generar el agarre de neumáticos, </td>
+                        <td>Motor V12 de 5.2 litros con turbocompresor ofrece 600 caballos de fuerza.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">McLaren 570S</th>
+                        <td>Cuenta con suspensión de doble horquilla oscilante y antivuelco,
+                            con un sistema de amortiguación adaptativo rápido, y unos neumáticos
+                            Pirelli PZero Corsa que controlan todo el movimiento del cuerpo. </td>
+                        <td>Motor medio de 3.8 litros con turbocompresor ofrece 562 caballosde fuerza.</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Subaru BRZ</th>
+                        <td>Son livianos, compactos, con tracción trasera
+                            y ofrecen una transmisión manual de seis velocidades. </td>
+                        <td>motor de cuatro cilindros plano, ofrece 205 caballos de fuerza.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Alfa Romeo Giulia Quadrifogli</th>
+                        <td>Este modelo italiano de tracción trasera que le permite saltar de 0 a
+                            100 km/h en tan solo 3.8 segundos. Es tanta su aceleración que incluso
+                            supera al Lexus LFA y al Lamborghini Gallardo LP570-4 Superleggera.
+                            Audi RS3 Sedán</td>
+                        <td>Motor V6 biturbo de 2.9 litros que viene de Ferrari.</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Audi RS3 Sedán</th>
+                        <td>Este modelo de la marca alemana de los anillos es que su diseño combina
+                            a la perfección la carrocería del A3 con líneas deportivas que revelan
+                            su ADN de velocidad.
+                            Potencia que lo dispara de 0 a 100 km/h en tan solo 3,9 segundos.
+                            Esto le permite al Audi RS3 Sedán tener un control preciso de la potencia
+                            que envía a cada rueda.
+                        </td>
+                        <td>Motor de 2.5 litros y cinco cilindros turboalimentado eroga 400 caballos de fuerza.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Jaguar XE SV Project 8</th>
+                        <td>Este sedán deportivo inglés tiene tracción integral con desviación trasera y una suspensión
+                            diseñada que ofrece altos niveles de agarre, estas características hace que este auto vaya
+                            de 0 a 100 km/h en solo 3.3 segundos para ir a una velocidad máxima de 320 km/h.
+                        </td>
+                        <td> Motor V8 de 5.0 litros sobrealimentado que eroga 592 caballos de potencia.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mercedes-AMG E63 S</th>
+                        <td>Se trata del Clase E más potente fabricado alguna vez por Mercedes-Benz y esto se debe
+                            en gran medida a que este sedán utiliza el mismo motor V8 de 4.0 litros que el Mercedes S63,
+                            además de la misma caja de cambios. El motor del AMG E63 S le permite a su conductor
+                            disponer de increíbles 612 CV para ir de 0 a 100 km/h en tan sólo 3.3 segundos.
+                        </td>
+                        <td>V8 de 4.0 litros </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">BMW M5</th>
+                        <td>Este modelode alta gama alemana es un auto sedan posee el moderno sistema de tracción total
+                            M-xDrive que le permite saltar de 0 a 100 km/h en impresionantes 3,1 segundos. Ya que viene
+                            con una suspensión más firme y geometrías nuevas para la caída de sus neumáticos,ofreciendo
+                            una barra estabilizadora más rígida, nuevos soportes para su motor y nuevas rótulas para la
+                            suspensión.</td>
+                        <td>El motor V8 de 4 litros y turbocompresor del M5 envía 600 caballos de fuerza </td>
+                    </tr>
+                </tbody>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <br></br>
+
+ 
+    <!---Pie de pagina-->
+    <div class="row ">
+        <div class="col-sm-12 ">
+            <p class="text-center">Derechos Reservados 2022 &copy; </p>
+        </div>
+    </div>
+    <!--Escript para el buscador-->
+    <script>
+        $(document).ready(function () {
+            //Seleciona con el evento clic el id del boton
+            $("#myInput").on("keyup", function () {
+                //Creamos una variable para 
+                var value = $(this).val().toLowerCase();
+                //Buscar los datos en la tabla
+                $("#miTabla tr").filter(function () {
+                    //realiza las consultas la  tabla
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</body>
+<!--funcion del boton y imagenes que muestren un texto la posicionar el mouse sobre ellos-->
+<script>
+    //Funcion que muestra un mensaje al boton
+    $(function () {
+        //Para cuando se mouse para sobre el 
+        $('{data-toggle="tooltip"}').tooltip()
+    })
+</script>
+
+</html>
+
+</html>
